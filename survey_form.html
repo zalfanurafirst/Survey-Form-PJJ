@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="survey_form.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">Survey Pembelajaran Daring</h1>
+  <p id="description"><i>Beri tau kami tentang pendapatmu seputar PJJ</i></p>
+  <form id="survey-form">
+    <div class="form-control">
+      <label for="name" id="name-label">Nama
+      <input type="text" id="name" placeholder="tulis namamu" required="">
+    </div>
+    <div class="form-control">
+      <label for="email" id="email-label">Email
+      <input type="email" id="email" placeholder="masukkan alamat emailmu" required="">
+    </div>
+    <div class="form-control">
+      <label for="umur" id="number-label">Umur
+      <input type="number" id="number" placeholder="pilih umurmu" min="10" max="24"required="">
+    </div>
+    <div class="form-control">
+      <label for="kelas" id="kelas-label">Kelas
+      <select name="kelas" id="dropdown" required="">
+        <option disabled="" selected=""value="">pilih kelasmu</option>
+        <option value="">7 SMP</option>
+        <option value="">8 SMP</option>
+        <option value="">9 SMP</option>
+        <option value="">10 SMA</option>
+        <option value="">11 SMA</option>
+        <option value="">12 SMA</option>
+        <option value="">Mahasiswa smt1</option>
+        <option value="">Mahasiswa smt2</option>
+        <option value="">Mahasiswa smt3</option>
+        <option value="">Mahasiswa smt4</option>
+        <option value="">Mahasiswa smt5</option>
+        <option value="">Mahasiswa smt6</option>
+        <option value="">Mahasiswa smt7</option>
+        <option value="">Mahasiswa smt8</option>
+      </select>
+    </div>
+    <div class="form-control">
+        <label for="lama pembelajaran daring" class="pertanyaan">Berapa lama pembelajaran secara daring berlangsung?</label>
+        <small>
+        <label for="jawaban"><input type="radio"id="jam-mengajar-1" name="lama-mengajar"value="0-2 jam">0-2 jam</label>
+        <label for="jawaban"><input type="radio"id="jam-mengajar-2" name="lama-mengajar"value="2-4 jam">2-4 jam</label>
+        <label for="jawaban"><input type="radio"id="jam-mengajar-3" name="lama-mengajar"value="4-6 jam">4-6 jam</label>
+        <label for="jawaban"><input type="radio"id="jam-mengajar-4" name="lama-mengajar"value="lainnya">lainnya</label>
+      </small>  
+    </div>
+    <div class="form-control">
+      <label class="pertanyaan-2">Hal apa saja yang kamu alami selama belajar daring?<small>(pilih beberapa yang sesuai keadaanmu)</small></label>
+      <small>
+        <label for="keadaan">
+          <input type="checkbox" name="keadaan-1" id="keadaan-1" value="jaringan tidak stabil">
+          <span>jaringan tidak stabil</span>
+        </label>
+        <label for="keadaan">
+          <input type="checkbox" name="keadaan-2" id="keadaan-2" value="harga paket internet mahal">
+          <span>harga paket internet mahal</span>
+        </label>
+        <label for="keadaan">
+          <input type="checkbox" name="keadaan-3" id="keadaan-3" value="guru tidak menjelaskan dengan baik">
+          <span>guru tidak menjelaskan dengan baik</span>
+        </label>
+        <label for="keadaan">
+          <input type="checkbox" name="keadaan-4" id="keadaan-4" value="guru hanya memberi tugas">
+          <span>guru hanya memberi tugas</span>
+        </label>
+        <label for="keadaan">
+          <input type="checkbox" name="keadaan-5" id="keadaan-5" value="tidak masalah, saya suka belajar daring">
+          <span>tidak masalah, saya suka belajar daring</span>
+        </label>
+      </small>
+    </div>
+    <div class="form-control">
+      <p>Ada pendapat tambahan?</p>
+      <textarea name="komentar" id="komentar" placeholder="masukan komentarmu di sini"></textarea>
+    </div>
+    <div class="form-control">
+      <button id="submit" class="submit-button" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

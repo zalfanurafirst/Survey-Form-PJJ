@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins';
+  background-color: #c2d4c1;
+  text-align: center;
+  margin: 0%;
+}
+#title{
+  margin-bottom: 0px;
+}
+h1+p{
+  margin-top: 0px;
+}
+form{
+  background-color: #4cb7a5;
+  max-width: 450px;
+  margin: 40px auto;
+  box-shadow: 2px 5px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  padding: 30px 20px;
+  font-size: 18px;
+}
+.form-control{
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-control input, .form-control select, .form-control textarea{
+  padding: 10px;
+  border: 1px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  font-family: Georgia;
+  z-index: 1;
+}
+.pertanyaan, .pertanyaan-2{
+  display: block;
+}
+.form-control input[type="radio"],.form-control input[type="checkbox"]{
+  display: inline-block;
+  width: auto;
+}
+
+button{
+  background-color: #c2d4c1;
+  display: block;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 3px rgba(0,0,0,0.4);
+}
